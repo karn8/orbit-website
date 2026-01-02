@@ -56,7 +56,7 @@ let subIndex = 0;
 let currentSectionData = SECTIONS[0];
 
 // Initialize title with interactive characters
-const titleText = "ORBIT LMS";
+const titleText = "Orbit LMS";
 const titleEl = document.getElementById('title-text');
 titleText.split("").forEach(char => {
     const span = document.createElement('span');
