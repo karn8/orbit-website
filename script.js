@@ -22,7 +22,7 @@ const SECTIONS = [
     {
         id: 'teacher',
         title: "Teacher Portal",
-        subtitle: "Empower educators with tools designed to enhance teaching effectiveness and reduce administrative burden. Quizzes, Polls, Files. Everything you need to runa class",
+        subtitle: "Empower educators with tools designed to enhance teaching effectiveness and reduce administrative burden. Quizzes, Polls, Files. Everything you need to run a class",
         views: [
             { image: "screenshots/teacher-screen2.png", alt: "Class Manager" },
             { image: "screenshots/teacher-screen1.png", alt: "GradeBook AI" },
