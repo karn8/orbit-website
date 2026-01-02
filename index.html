@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit LMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="app-container bg-transition-purple is-hero-active">
+        <div class="cursor-glow"></div>
+        <div id="cursor-trail"></div>
+        
+        <nav class="floating-nav is-hero">
+            <div class="nav-pill" id="nav-pill">
+                <button class="active" data-section="hero">Home</button>
+                <button data-section="admin">Admin</button>
+                <button data-section="wellness">Wellness</button>
+                <button data-section="teacher">Teacher</button>
+                <button data-section="student">Student</button>
+                <button data-section="ai">Ai</button>
+            </div>
+        </nav>
+        
+        <header class="hero" id="hero-section">
+            <div class="hero-content">
+                <h1 class="interactive-title" id="title-text"></h1>
+                <p>Learning Aligned</p>
+                <div class="scroll-indicator">
+                    <div class="mouse"></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="interactive-scroll-zone">
+            <div class="sticky-phone-container">
+                <div class="phone-mockup">
+                    <button class="phone-nav-btn prev" id="prev-btn">‹</button>
+                    <button class="phone-nav-btn next" id="next-btn">›</button>
+                    
+                    <div class="phone-screen">
+                        <div class="screen-inner">
+                            <div class="app-bar" id="app-bar">Orbit ADMIN</div>
+                            <div class="screen-content">
+                                <div class="sub-slide-container" id="sub-slides"></div>
+                            </div>
+                            <div class="screen-dots" id="screen-dots"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-layers" id="content-layers"></div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Orbit LMS</h3>
+                    <p>Future-ready learning management for the modern era. Powering the next generation of academic excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <a href="#">Support Center</a>
+                    <a href="#">Enterprise Sales</a>
+                    <a href="#">Product Roadmap</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 Orbit LMS. All rights reserved. | Built with modern educational principles.
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
