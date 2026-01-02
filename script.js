@@ -4,9 +4,9 @@ const SECTIONS = [
         title: "Admin Portal",
         subtitle: "Comprehensive control and oversight for your institution. Manage your entire educational ecosystem with powerful analytics and intuitive controls.",
         views: [
-            { image: "screenshots/admin-dashboard.png", alt: "Admin Dashboard" },
-            { image: "screenshots/admin-users.png", alt: "User Control" },
-            { image: "screenshots/admin-resources.png", alt: "Resource Planning" }
+            { image: "screenshots/admin-screen1.png", alt: "Admin Dashboard" },
+            { image: "screenshots/admin-screen2.png", alt: "User Control" },
+            { image: "screenshots/admin-screen3.png", alt: "Resource Planning" }
         ]
     },
     {
@@ -14,7 +14,7 @@ const SECTIONS = [
         title: "Wellness Hub",
         subtitle: "Prioritizing the mental and emotional well-being of your educational community with integrated support and AI wellness features.",
         views: [
-            { image: "screenshots/wellness-bot.png", alt: "Wellness Bot" },
+            { image: "screenshots/wellness-screen1.png", alt: "Wellness Bot" },
             { image: "screenshots/wellness-mood.png", alt: "Mood Tracker" },
             { image: "screenshots/wellness-crisis.png", alt: "Crisis Support" }
         ]
@@ -24,9 +24,9 @@ const SECTIONS = [
         title: "Teacher Portal",
         subtitle: "Empower educators with tools designed to enhance teaching effectiveness and reduce administrative burden.",
         views: [
-            { image: "screenshots/teacher-class.png", alt: "Class Manager" },
-            { image: "screenshots/teacher-gradebook.png", alt: "GradeBook AI" },
-            { image: "screenshots/teacher-content.png", alt: "Content Hub" }
+            { image: "screenshots/teacher-screen1.png", alt: "Class Manager" },
+            { image: "screenshots/teacher-screen2.png", alt: "GradeBook AI" },
+            { image: "screenshots/teacher-screen3.png", alt: "Content Hub" }
         ]
     },
     {
@@ -34,9 +34,9 @@ const SECTIONS = [
         title: "Student Portal",
         subtitle: "An intuitive learning environment that keeps students engaged, organized, and motivated to succeed.",
         views: [
-            { image: "screenshots/student-learning.png", alt: "My Learning" },
-            { image: "screenshots/student-peer.png", alt: "Peer Study" },
-            { image: "screenshots/student-achievement.png", alt: "Achievement Map" }
+            { image: "screenshots/student-screen1.png", alt: "My Learning" },
+            { image: "screenshots/student-screen2.png", alt: "Peer Study" },
+            { image: "screenshots/student-screen3.png", alt: "Achievement Map" }
         ]
     },
     {
@@ -44,8 +44,8 @@ const SECTIONS = [
         title: "AI Insights",
         subtitle: "Revolutionize your institution with cutting-edge artificial intelligence that enhances learning and streamlines tasks.",
         views: [
-            { image: "screenshots/ai-tutor.png", alt: "Smart Tutor" },
-            { image: "screenshots/ai-predictive.png", alt: "Predictive Ops" },
+            { image: "screenshots/ai-screen1.png", alt: "Smart Tutor" },
+            { image: "screenshots/ai-screen2.png", alt: "Predictive Ops" },
             { image: "screenshots/ai-content.png", alt: "GenAI Content" }
         ]
     }
