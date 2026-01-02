@@ -4,9 +4,9 @@ const SECTIONS = [
         title: "Admin Portal",
         subtitle: "Comprehensive control and oversight for your institution. Manage your entire educational ecosystem with powerful analytics and intuitive controls.",
         views: [
-            { title: "Dashboard", description: "Real-time institutional health metrics and enrollment trends." },
-            { title: "User Control", description: "Batch management of student and faculty credentials." },
-            { title: "Resource Planning", description: "Automated scheduling and facility allocation tools." }
+            { image: "screenshots/admin-dashboard.png", alt: "Admin Dashboard" },
+            { image: "screenshots/admin-users.png", alt: "User Control" },
+            { image: "screenshots/admin-resources.png", alt: "Resource Planning" }
         ]
     },
     {
@@ -14,9 +14,9 @@ const SECTIONS = [
         title: "Wellness Hub",
         subtitle: "Prioritizing the mental and emotional well-being of your educational community with integrated support and AI wellness features.",
         views: [
-            { title: "Wellness Bot", description: "Instant access to emotional support and mindfulness resources.", icon: "💖" },
-            { title: "Mood Tracker", description: "Visualized emotional trends for proactive care." },
-            { title: "Crisis Support", description: "One-tap connection to professional intervention services." }
+            { image: "screenshots/wellness-bot.png", alt: "Wellness Bot" },
+            { image: "screenshots/wellness-mood.png", alt: "Mood Tracker" },
+            { image: "screenshots/wellness-crisis.png", alt: "Crisis Support" }
         ]
     },
     {
@@ -24,9 +24,9 @@ const SECTIONS = [
         title: "Teacher Portal",
         subtitle: "Empower educators with tools designed to enhance teaching effectiveness and reduce administrative burden.",
         views: [
-            { title: "Class Manager", description: "Seamlessly organize assignments and track student growth." },
-            { title: "GradeBook AI", description: "Automated scoring with detailed qualitative feedback." },
-            { title: "Content Hub", description: "Centralized repository for multimedia lesson plans." }
+            { image: "screenshots/teacher-class.png", alt: "Class Manager" },
+            { image: "screenshots/teacher-gradebook.png", alt: "GradeBook AI" },
+            { image: "screenshots/teacher-content.png", alt: "Content Hub" }
         ]
     },
     {
@@ -34,9 +34,9 @@ const SECTIONS = [
         title: "Student Portal",
         subtitle: "An intuitive learning environment that keeps students engaged, organized, and motivated to succeed.",
         views: [
-            { title: "My Learning", description: "Interactive course materials and personalized deadline tracking." },
-            { title: "Peer Study", description: "Collaborative project spaces and virtual study rooms." },
-            { title: "Achievement Map", description: "Gamified progress tracking and certification paths." }
+            { image: "screenshots/student-learning.png", alt: "My Learning" },
+            { image: "screenshots/student-peer.png", alt: "Peer Study" },
+            { image: "screenshots/student-achievement.png", alt: "Achievement Map" }
         ]
     },
     {
@@ -44,9 +44,9 @@ const SECTIONS = [
         title: "AI Insights",
         subtitle: "Revolutionize your institution with cutting-edge artificial intelligence that enhances learning and streamlines tasks.",
         views: [
-            { title: "Smart Tutor", description: "24/7 AI assistance for students with subject mastery.", icon: "🧠" },
-            { title: "Predictive Ops", description: "AI-driven forecasting for student outcomes and dropout prevention." },
-            { title: "GenAI Content", description: "Automatic generation of quizzes and supplemental materials." }
+            { image: "screenshots/ai-tutor.png", alt: "Smart Tutor" },
+            { image: "screenshots/ai-predictive.png", alt: "Predictive Ops" },
+            { image: "screenshots/ai-content.png", alt: "GenAI Content" }
         ]
     }
 ];
@@ -100,6 +100,11 @@ window.addEventListener('mousemove', (e) => {
     });
 });
 
+// Logo click handler
+document.querySelector('.site-logo').addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 // Navigation
 function scrollInto(id) {
     if (id === 'hero') {
@@ -146,9 +151,7 @@ function renderPhoneSlides() {
         const slide = document.createElement('div');
         slide.className = 'sub-slide';
         slide.innerHTML = `
-            ${view.icon ? `<div class="phone-icon-large">${view.icon}</div>` : ''}
-            <h2>${view.title}</h2>
-            <p>${view.description}</p>
+            <img src="${view.image}" alt="${view.alt}" class="screenshot-image">
         `;
         subSlides.appendChild(slide);
 
