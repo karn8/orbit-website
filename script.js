@@ -22,7 +22,7 @@ const SECTIONS = [
     {
         id: 'teacher',
         title: "Teacher Portal",
-        subtitle: "Empower educators with tools designed to enhance teaching effectiveness and reduce administrative burden.",
+        subtitle: "Empower educators with tools designed to enhance teaching effectiveness and reduce administrative burden. Quizzes, Polls, Files. Everything you need to runa class",
         views: [
             { image: "screenshots/teacher-screen2.png", alt: "Class Manager" },
             { image: "screenshots/teacher-screen1.png", alt: "GradeBook AI" },
@@ -42,7 +42,7 @@ const SECTIONS = [
     {
         id: 'ai',
         title: "AI Insights",
-        subtitle: "Revolutionize your institution with cutting-edge artificial intelligence that enhances learning and streamlines tasks.",
+        subtitle: "Revolutionize your institution with cutting-edge artificial intelligence features that enhances learning and streamlines tasks. Personalized coaching and Analytics to help you learn better",
         views: [
             { image: "screenshots/ai-screen1.png", alt: "Smart Tutor" },
             { image: "screenshots/ai-screen2.png", alt: "Predictive Ops" },
