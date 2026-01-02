@@ -60,6 +60,11 @@ body {
     transform: translate(-50%, -50%);
     user-select: none;
     mix-blend-mode: screen;
+    transition: color 0.6s ease;
+}
+
+.bg-transition-wellness .cursor-trail-symbol {
+    color: var(--wellness-pink);
 }
 
 .cursor-glow {
@@ -71,6 +76,11 @@ body {
     pointer-events: none;
     z-index: 9999;
     transform: translate(-50%, -50%);
+    transition: background 0.6s ease;
+}
+
+.bg-transition-wellness .cursor-glow {
+    background: radial-gradient(circle, rgba(255, 183, 197, 0.3) 0%, transparent 70%);
 }
 
 .hero {
@@ -363,14 +373,26 @@ body {
     font-weight: 600; 
 }
 
-.footer-section p, 
+.footer-section p { 
+    font-family: var(--font-sans); 
+    color: rgba(255,255,255,0.4); 
+    display: block; 
+    margin-bottom: 12px; 
+    font-size: 0.9rem; 
+}
+
 .footer-section a { 
     font-family: var(--font-sans); 
     color: rgba(255,255,255,0.4); 
     text-decoration: none; 
     display: block; 
     margin-bottom: 12px; 
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--primary);
 }
 
 .footer-bottom { 
@@ -467,6 +489,13 @@ body {
     background: var(--primary);
     color: #fff;
     box-shadow: 0 5px 15px var(--primary-glow);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bg-transition-wellness .nav-pill button.active {
+    background: var(--wellness-pink);
+    color: var(--wellness-maroon);
+    box-shadow: 0 5px 15px rgba(255, 183, 197, 0.4);
 }
 
 @media (max-width: 768px) {
