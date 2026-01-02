@@ -246,14 +246,7 @@ body {
 }
 
 .app-bar { 
-    padding: 30px 20px 15px; 
-    font-weight: 600; 
-    font-size: 0.6rem; 
-    border-bottom: 1px solid #f2f2f2; 
-    text-align: center; 
-    letter-spacing: 1.2px; 
-    text-transform: uppercase; 
-    color: #bbb; 
+    display: none;
 }
 
 .screen-content { 
