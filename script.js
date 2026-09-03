@@ -2,7 +2,7 @@ const roleContent = {
     student: {
         kicker: "Student experience",
         title: "One calm view of a busy school day.",
-        description: "Timetable, attendance, grades, fees, subjects and school updates—ready before the next bell.",
+        description: "Timetable, attendance, grades, fees, subjects and school updates, ready before the next bell.",
         features: ["Today’s timetable and school calendar", "Attendance and academic progress", "Classroom resources, quizzes and polls"],
         image: "screenshots/student-screen1.png",
         alt: "Orbit student dashboard",
@@ -34,7 +34,7 @@ const roleContent = {
     },
     family: {
         kicker: "Family experience",
-        title: "Stay informed—even across two school days.",
+        title: "Stay informed across two school days.",
         description: "Linked student profiles make it simple to follow each student’s attendance, fees, progress and updates separately.",
         features: ["Switch safely between student profiles", "Keep each student record distinct", "See fees, attendance and progress clearly"],
         image: "screenshots/student-screen3.png",
