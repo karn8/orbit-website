@@ -27,6 +27,11 @@ a { color: inherit; }
 img { display: block; max-width: 100%; }
 button, a { -webkit-tap-highlight-color: transparent; }
 button { font: inherit; }
+body :where(.eyebrow, .hero-note, .hero-footer, .brand small, .device-main figcaption span, .role-satellite small, .signal-rail strong, .map-center span, .map-card small, .role-kicker, .screen-label small, .feature-top, .mini-stream span, .payment-ticket small, .week-strip span, .ai-principle, .insight-card small, .profile-card i, .footer-links b, .footer-bottom) {
+    font-family: var(--body) !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+}
 ::selection { background: var(--lime); color: var(--ink); }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .skip-link { position: fixed; z-index: 9999; left: 16px; top: -80px; padding: 12px 18px; background: var(--white); color: var(--ink); border-radius: 12px; transition: top .2s; }
