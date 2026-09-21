@@ -1,8 +1,8 @@
 const roleContent = {
     student: {
         kicker: "Student experience",
-        title: "One calm view of a busy school day.",
-        description: "Timetable, attendance, grades, fees, subjects and school updates, ready before the next bell.",
+        title: "Know where to focus this week.",
+        description: "Timetable, attendance, grades, fees, subjects and school updates, with a clearer view of what deserves attention next.",
         features: ["Today’s timetable and school calendar", "Attendance and academic progress", "Classroom resources, quizzes and polls"],
         image: "screenshots/student-screen1.png",
         alt: "Orbit student dashboard",
@@ -12,8 +12,8 @@ const roleContent = {
     },
     teacher: {
         kicker: "Teacher experience",
-        title: "The teaching day, without the tool chase.",
-        description: "Move naturally from schedule to homeroom, classroom activity, attendance, assessments and class insight.",
+        title: "See who needs you next.",
+        description: "Move from schedule to classroom activity, attendance, assessments and class insight with a clearer sense of where support will matter.",
         features: ["Schedule and homeroom at a glance", "Lectures, files, quizzes and polls", "Attendance, grades and class performance"],
         image: "screenshots/teacher-screen2.png",
         alt: "Orbit teacher dashboard",
@@ -23,8 +23,8 @@ const roleContent = {
     },
     admin: {
         kicker: "Administrator experience",
-        title: "See the school clearly. Move it forward.",
-        description: "People, announcements, fees, planning and performance come together in one decisive school view.",
+        title: "Catch problems before they grow.",
+        description: "People, announcements, fees, planning and performance come together in one school view built for earlier intervention.",
         features: ["Manage teachers, students and classes", "Publish announcements and fee structures", "Review class performance and reports"],
         image: "screenshots/admin-screen3.png",
         alt: "Orbit administrator dashboard",
@@ -34,7 +34,7 @@ const roleContent = {
     },
     family: {
         kicker: "Family experience",
-        title: "Stay informed across two school days.",
+        title: "Know before it becomes a problem.",
         description: "Linked student profiles make it simple to follow each student’s attendance, fees, progress and updates separately.",
         features: ["Switch safely between student profiles", "Keep each student record distinct", "See fees, attendance and progress clearly"],
         image: "screenshots/student-screen3.png",
@@ -52,7 +52,8 @@ const roleDisplay = document.querySelector("[data-role-display]");
 const roleDevice = document.querySelector(".role-device");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-document.querySelector("[data-year]").textContent = new Date().getFullYear();
+const yearTarget = document.querySelector("[data-year]");
+if (yearTarget) yearTarget.textContent = new Date().getFullYear();
 
 function updateHeader() {
     header.classList.toggle("is-scrolled", window.scrollY > 36);
